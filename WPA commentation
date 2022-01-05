@@ -1,0 +1,58 @@
+<!DOCTYPE html> --defines the document as HTML--
+<html lang="en-US"> --all code between this tag and </html> is in html. defining the language is optional but just there for good habit. it is saying that the document is written in english--
+<head> --starts the head of the document
+<title>About_Me</title> --adds a title. this is not visually displayed but can be read by the computer; just for reference purposes--
+</head> --ends the head tag--
+<style> --admittedly this was bad code because in retrospect this tag should have been included in the head. Style to format the "aside"--
+aside { --customizations for the "aside" so that it looks like an "ad."--
+  width: 23%; --makes the aside take up 23% of the screen horizontally. This scales if you zoom in or out. number chosen specifically based on experimentation. because the width attribute was not defined, it would just scale with the content of the "ad."--
+  padding-left: 15px; --adds a padding that is 15 pixels on the left side. The padding is just the distance from the border and the start of the actual content--
+  margin-left: 20px; --adds a margin to the left side of the text that is 20 pixels wide.--
+  float: right; --defines which side of the screen the "aside" will be on, which in this case is right. If the float was "left," the aside would appear on the left side of the screen.--
+  background-color: DarkGray; --sets the background color as dark gray just to match with the theme of the website--
+  border:2px solid Gray --adds a border so the "ad" is well-defined. it is 2 pixels thick, is solid, and is gray in color.--
+}
+</style> --end of style tag--
+<body style="background-color:LightGray;"> --start of real content, style attribute defines the background color of the entire page to be light gray.--
+  <h1 style="color:Black; border:2px solid Gray; background-color:DarkGray;" align="middle"><b>Ryan Nguyen</b></h1> --adds a large heading. style tag makes the text black, which in retrospect is unnecessary but the reason for was because I was experimenting with different colors and decided on black, but instead of deleting the attribute, I left it in as black. also adds a solid gray border that is 2 pixels thick, defines the background color as dark gray, and aligns the bolded text (using <b>) to the middle. admittedly the line indentation could have been more neat, but it doesn't affect the actual content.--
+<a href="https://cdn.discordapp.com/attachments/743982296058822686/917490419175157760/IMG_1586.jpg" target="_blank"> --defines the start of a link. putting it before the <aside> makes the entire <aside> a link. Clicking on it will send a request to the included link. setting the target attribute as "_blank" opens the tab in a new window instead of replacing the current website for convenience. currently there is no real website that this leads to and the included link is merely a placeholder.--
+<aside> --starts the aside. It is inluded as a link. Previously its visual attributes were already defined in the <style> tag above.--
+<p style="color:Black">Visit Johan Desiderio's awesome website!</p> <adds a paragraph with some text. Unnecesary color attributes were left in there for the same reason as above.--
+<p style="color:Black">We are having a Winter<b> sale on everything!</b></p> --adds a paragraph with some text, with emphasis on the fact that there is a sale, to catch the viewer's attention--
+<p style="color:Black"><small>This advertisement was sponsored by the Johan Desiderio Foundation.</small></p> --adds a paragraph with some text. the <small> tag was used to make the text smaller to mimic fine print, though it also could have been possible to use style attributes to more specifically define the font size.--
+<img src="https://cdn.discordapp.com/emojis/891438825841238027.png?size=96"></img> --defines a small icon that requests from the included link.--
+</aside> --ends the aside--
+</a> --closes off the link--
+<h4 style="color:Black;">About Me and More</h4> --adds a relatively small heading with some text, again has unecessary color attribute--
+<ul> --defines the start of an unordered list. this means it will not have numbers.--
+    <li>
+    <a href="link" target="_blank" style="color:Gray;">Hobbies/Interests</a> --adds a link as a list item with specified color gray. for now, the link is not complete and the text "link" is there as a placeholder. like the "ad," setting the target as "_blank" will open it in a new tab.--
+    </li>
+
+    <li>
+    <a href="link" target="_blank" style="color:Gray;">Products</a> --another link as a list item--
+    </li>
+
+    <li>
+    <a href="link" target="_blank" style="color:Gray;">Merchandise <b style="color:Black">(Christmas Sale - Save up to 20%!)</b></a> --another link as a list item. <b> tag used to again emphasize that there is a sale.--
+    </li>
+
+    <li>
+    <a href="link" target="_blank" style="color:Gray;">Favorite Albums</a> --another link as a list item--
+    </li>
+
+    <li>
+    <a href="link" target="_blank" style="color:Gray;">Awards</a> --another link as a list item--
+    </li>
+</ul> --closes off the unsorted list--
+<br> --adds a line break to make some space--
+<br> -- adds another line break.--
+<p> --defines a paragraph with small text to again mimic fine print. it includes a link to a file that I made on GitHub that has some text. Setting the target as "_blank" makes the link open in a new tab--
+<small>For the sake of your privacy, we do not collect cookies. To learn more about our data policy, visit the <a href="https://raw.githubusercontent.com/dumbo3435/ecs-terms-and-conditions/main/Terms%20and%20Conditions" target="_blank" style="color:Black;"><b>Terms and Conditions.</b></a>
+</small>
+</p> --closes off the paragraph--
+<p><small> --adds a new paragraph with some small bolded text--
+Copyright 2021 by <b>Ryan Corps™</b> and all Organizations Under <b>Ryan Corps™</b>. All Rights Reserved.
+</small></p> --closes off the paragraph--
+</body> --closes off the visual content--
+</html> --closes off the entire html content--
